@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'EastSeaDokdo-Regular';
+    src: url('fonts/EastSeaDokdo-Regular.ttf') format('truetype');
+    src: url('fonts/east-sea-dokdo-v22-latin-regular.woff') format('woff');
+    src: url('fonts/east-sea-dokdo-v22-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'InriaSans-Regular';
+    src: url('fonts/InriaSans-Regular.ttf') format('truetype');
+    src: url('fonts/inria-sans-v14-latin-regular.woff') format('woff');
+    src: url('fonts/inria-sans-v14-latin-regular.woff2') format('woff2');
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 1000px;
+    margin: auto;
+    margin-top: 3%;
+    color: #00FFA3;
+    font-family: 'InriaSans-Regular';
+    font-size: 14px;
+}
+
+button {
+    padding: 8px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 2px solid #00FFA3;
+    background-color: #ffffff;
+    width: 100px;
+    font-family: 'InriaSans-Regular';
+    font-size: 14px;
+    color:#00FFA3;
+    cursor: pointer;
+}
+
+#background {
+    background-image: url('images/bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#background p {
+    font-family: EastSeaDokdo-Regular;
+    font-size: 500px;
+    text-align: center;
+    color: #00FFA3;
+    line-height: 0.7;
+    margin-top: 100px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    margin-top: 70%;
+}
+
+#behancetextbox {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#behance {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#behance img {
+    width: 200px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#behance a {
+    font-family: 'InriaSans-Regular';
+    font-size: 24px;
+    text-decoration: none;
+    color: #00FFA3;
+}
+
+#textbox {
+    width: 40%;
+}
+
+#textbox p {
+    margin: 0px;
+    font-family: 'InriaSans-Regular';
+    line-height: 2;
+    font-size: 14px;
+}
+
+#textbox a {
+    font-family: 'InriaSans-Regular';
+    line-height: 2;
+    color:#00FFA3;
+    font-size: 14px;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#impressum {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#impressum a {
+    font-family: 'InriaSans-Regular';
+    text-decoration: none;
+    color: #cacaca;
+}
+
+
