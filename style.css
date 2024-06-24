@@ -12,15 +12,18 @@
     src: url('fonts/inria-sans-v14-latin-regular.woff2') format('woff2');
 }
 
+#uldiv {
+    display: flex;
+    justify-content: center;
+}
 
 ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     list-style: none;
-    width: 1000px;
-    margin: auto;
-    margin-top: 3%;
+    margin: 3% auto;
     color: #00FFA3;
     font-family: 'InriaSans-Regular';
     font-size: 14px;
@@ -28,52 +31,56 @@ ul {
 
 button {
     padding: 8px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     border-radius: 20px;
     border: 2px solid #00FFA3;
     background-color: #ffffff;
     width: 100px;
     font-family: 'InriaSans-Regular';
     font-size: 14px;
-    color:#00FFA3;
+    color: #00FFA3;
     cursor: pointer;
 }
 
 #background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('images/bg.png');
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    /* position: absolute; */
 }
 
 #background p {
     font-family: EastSeaDokdo-Regular;
-    font-size: 500px;
-    text-align: center;
+    font-size: 30vw;
     color: #00FFA3;
     line-height: 0.7;
-    margin-top: 100px;
 }
 
 section {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 90vh;
-    margin-top: 70%;
 }
 
 #behancetextbox {
     display: flex;
+    width: 90vw;
+    margin: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start;
-    width: 100%;
-    justify-content: space-around;
 }
 
 #behance {
     display: flex;
+    margin-bottom: 20px;
     flex-direction: column;
-    width: 20%;
 }
 
 #behance img {
@@ -90,7 +97,7 @@ section {
 }
 
 #textbox {
-    width: 40%;
+    width: 600px;
 }
 
 #textbox p {
@@ -103,12 +110,13 @@ section {
 #textbox a {
     font-family: 'InriaSans-Regular';
     line-height: 2;
-    color:#00FFA3;
+    color: #00FFA3;
     font-size: 14px;
 }
 
 #icons {
-    display: flex;
+    display: none;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -124,4 +132,20 @@ section {
     color: #cacaca;
 }
 
+@media screen and (min-width: 1200px) {
+    button {
+        margin-left: 50px;
+    }
+}
 
+@media screen and (min-width: 1000px) {
+    #behancetextbox {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #icons {
+        display: flex;
+    }
+}
